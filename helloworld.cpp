@@ -5,11 +5,18 @@
 
 int main (){
     
-   int correct = 8;
-   int questions = 10;
-   double percentage = correct/questions*100;
+    std::string name;
+    int age;
 
-   std::cout << percentage <<"%";
 
+    std::cout << "What's your age?:";
+    std::cin >> age;
+
+    std::cout << "What's your name?:";
+    std::getline(std::cin >> std::ws, name);
+
+
+    std::cout << "Hello " << name << "\n";
+    std::cout << "I'm " << age;
     return 0;
 }
