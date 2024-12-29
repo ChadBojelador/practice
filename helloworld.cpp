@@ -3,21 +3,25 @@
 
 int main ()
 {
-    double a;
-    double b;
-    double c;
 
-    std:: cout << "Input a :";
-    std:: cin >> a;
-    std:: cout << "Input b :";
-    std:: cin >> b;
+    int age;
 
-    c = sqrt(pow(a,2)+pow(b,2));
+    std::cout << "Enter your age:";
+    std::cin >> age;
 
-
-
-
-    std::cout << c;
+    if(age >= 18){
+        std::cout << "You are an adult";
+    }
+    
+    else if (age < 0)
+    {
+        std::cout << "It is not a valid age";
+    }
+    
+    else
+    {
+        std::cout << "You are not allowed to enter";
+    }
 
     return 0;
 }
