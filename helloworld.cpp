@@ -12,6 +12,8 @@ int main ()
     std:: cout << "Input b :";
     std:: cin >> b;
 
+    c = sqrt(pow(a,2)+pow(b,2));
+
 
 
 
