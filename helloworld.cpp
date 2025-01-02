@@ -1,27 +1,29 @@
 #include <iostream>
-#include <cmath>
+
 
 int main ()
 {
+    char op;
+    double num1;
+    double num2;
+    double answer;
 
-    int age;
+    std::cout<<"**********Calculator Program**********"<<std::endl;
 
-    std::cout << "Enter your age:";
-    std::cin >> age;
+    std::cout<<"First Number"<<"\n";
+    std::cin>>num1;
+    std::cout<<"Operator"<<"\n";
+    std::cin>>op;
+    std::cout<<"Second Number"<<"\n";
+    std::cin>>num2;
 
-    if(age >= 18){
-        std::cout << "You are an adult";
-    }
-    
-    else if (age < 0)
+    switch(op)
     {
-        std::cout << "It is not a valid age";
+        case '+':
+        
     }
-    
-    else
-    {
-        std::cout << "You are not allowed to enter";
-    }
+
+ 
 
     return 0;
 }
