@@ -8,6 +8,8 @@ int main(){
     double num2;
     double answer;
 
+    std:: cout <<"*****Calculator*****"<<'\n';
+
     std:: cout <<"enter first number"<<'\n';
     std::cin>>num1;
 
@@ -36,4 +38,5 @@ int main(){
     }
 
     std::cout<< "The answer is "<<answer<<'\n';
+    std:: cout <<"*****************************"<<'\n';
 }
