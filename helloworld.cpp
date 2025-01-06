@@ -1,29 +1,39 @@
 #include <iostream>
+#include <cmath>
 
+int main(){
 
-int main ()
-{
     char op;
     double num1;
     double num2;
     double answer;
 
-    std::cout<<"**********Calculator Program**********"<<std::endl;
-
-    std::cout<<"First Number"<<"\n";
+    std:: cout <<"enter first number"<<'\n';
     std::cin>>num1;
-    std::cout<<"Operator"<<"\n";
+
+    std:: cout <<"enter operation"<<'\n';
     std::cin>>op;
-    std::cout<<"Second Number"<<"\n";
+
+    std:: cout <<"enter second number"<<'\n';
     std::cin>>num2;
 
-    switch(op)
-    {
-        case '+':
-        
+    if (op == '+') {
+        answer = num1 + num2;
     }
 
- 
+    else if (op == '-') {
+        answer = num1 - num2;
+    }
+    else if (op == '/') {
+        answer = num1 / num2;
+    }    
+    else if (op == '*') {
+        answer = num1 * num2;
+    }
 
-    return 0;
+    else{
+        std::cout<< "its not a valid operation"<< '\n';
+    }
+
+    std::cout<< "The answer is "<<answer<<'\n';
 }
