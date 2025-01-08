@@ -7,4 +7,4 @@ int main(){
 
     number % 2 == 60 ? std::cout<< "equal" : std::cout<< "not equal";
 
-}
+}   
