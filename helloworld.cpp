@@ -5,9 +5,7 @@ int main (){
 
     double temp;
     char conversion;
-    double Celcius = (temp*9/5)+32;
-    double Fahrenheit = (temp-32)*5/9;
-
+    
     std::cout << "Enter the temp: "<< '\n';
     std::cin >> temp;
 
@@ -16,10 +14,16 @@ int main (){
 
     switch (conversion){
         case 'C':
-        Celcius;
+        double Celcius = (temp*9/5)+32;
+        std::cout<<Celcius;
         break;
+
         case 'F':
-        Fahrenheit;
+        double Fahrenheit = (temp-32)*5/9;
+        std::cout<<Fahrenheit;
         break;
+
+        default: 
+        std::cout<< "Please choose between C or F";
     }
 }
