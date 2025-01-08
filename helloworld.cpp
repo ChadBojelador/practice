@@ -1,29 +1,14 @@
 #include <iostream>
 #include <cmath>
 
-int main(){
+int main (){
 
-    int temp;
-    bool sunny = true;
+    double temp;
+    double conversion;
+    double convertedTemp;
+
+    std::cout << "Enter F-C or C-F";
+    std::cin >> conversion;
 
 
-    std::cout << "Enter the temperature";
-    std::cin >> temp;
-
-    if (temp <= 0 || temp >= 30)
-    {
-       std::cout<<"The temp is bad"; /* code */
-    }
-    else{
-        std::cout<<"The temp is good";
-    }
-
-    if (!sunny)
-    {
-        std::cout << "it is not sunny";
-    }
-    else{
-        std::cout << "it is sunny";
-    }
-    
-}   
+}
