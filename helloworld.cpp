@@ -1,16 +1,12 @@
 #include <iostream>
 
-int main (){
-
+int main ()
+{
     std::string name;
 
-    std::cout << "Enter your name: ";
-    std::getline (std::cin, name);
-
-    if (name.empty())
-    {
-        std::cout << "you diddnt enter your name";
+    while (1==1){
+        std::cout << "HELP IM STUCK IN AN INFINITE LOOP";
     }
-    else
-    
+
+    std::cout << "Hello " << name;
 }
