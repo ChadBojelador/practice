@@ -3,8 +3,16 @@
 
 int main(){
 
-    int number = 60;
+    int temp;
 
-    number % 2 == 60 ? std::cout<< "equal" : std::cout<< "not equal";
+    std::cout << "Enter the temperature";
+    std::cin >> temp;
 
+    if (temp > 0 && temp < 30)
+    {
+       std::cout<<"The temp is good"; /* code */
+    }
+    else{
+        std::cout<<"The temp is bad";
+    }
 }   
