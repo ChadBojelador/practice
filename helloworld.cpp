@@ -1,15 +1,13 @@
 #include <iostream>
 
-int main ()
-{
-    int number;
+int main (){
 
-    do{
-        std::cout << "Enter a positive #: ";
-        std::cin >> number;
-    } while (number < 0);
-    
-    std::cout << "The # is: " << number;
 
+for(int i = 0; i<=10; i+=2 ){
+
+    std::cout << i << '\n';
+
+}
+    std::cout << "Happy New Year"<< '\n';
     return 0;
 }
