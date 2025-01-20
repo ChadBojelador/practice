@@ -2,11 +2,14 @@
 
 int main ()
 {
-    std::string name;
+    int number;
 
-    while (1==1){
-        std::cout << "HELP IM STUCK IN AN INFINITE LOOP";
-    }
+    do{
+        std::cout << "Enter a positive #: ";
+        std::cin >> number;
+    } while (number < 0);
+    
+    std::cout << "The # is: " << number;
 
-    std::cout << "Hello " << name;
+    return 0;
 }
