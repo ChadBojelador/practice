@@ -1,36 +1,33 @@
 #include <iostream>
+
 using namespace std;
 
-void insertionSort(int arr[], int n)
-{
-    for (int i = 1; i < n; ++i) {
-        int key = arr[i];
-        int j = i - 1;
+int main (){
 
-       
-        while (j >= 0 && arr[j] > key) {
-            arr[j + 1] = arr[j];
-            j = j - 1;
-        }
-        arr[j + 1] = key;
-    }
-}
-
-void print(int arr[], int n)
-{
-    for (int i = 0; i < n; ++i)
-        cout << arr[i] << " ";
-    cout << endl;
-}
+    int array [] = { 5, 4, 3, 2, 1};
+    int size = sizeof(array)/sizeof(array[0]);
 
 
-int main()
-{
-    int arr[] = { 12, 11, 13, 5, 6 };
-    int n = sizeof(arr) / sizeof(arr[0]);
+        for ( int i = 0; i < size; i++){
+            int minIndex = i;
 
-    insertionSort(arr, n);
-    print(arr, n);
+            for (int j = i; j < size ; j++)
+            {
+                if (array[j]<array[minIndex])
+                {
+                    int temp = array[j];
+                    array[j] =  array[minIndex];
+                    array[minIndex] = temp;
+                    
+                }
+                
+            }
+            
+                
+            }
 
-    return 0;
+            for ( int i = 0; i < size; i++){
+                cout<<array[i];
+            }
+     return 0;
 }
