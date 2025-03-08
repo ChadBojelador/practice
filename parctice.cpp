@@ -5,20 +5,24 @@ using namespace std;
 
 int main (){
     
-    int n;
+  int numbers[]={1,2,3,4,5,6,7};
+  int index;
+  int size = sizeof(numbers)/sizeof(numbers[0]);
+  int myNum;
+  index= searchArray(numbers,size,myNum);
 
-    cout<<"Enter a number: ";
-    cin>>n;
-
-   for (int i = 1; i <= n; i++)
-   {
-    for (int j = 1; j <= i; j++)
-    {
-        cout<<j<<" ";
-    }
-    cout<<'\n';
-   }
-   
-   
     return 0;
+}
+
+
+int searchArray(int array,int size, int element){
+    for (int i = 0; i < size; i++)
+    {
+        if ()
+        {
+            /* code */
+        }
+        
+    }
+    
 }
