@@ -3,23 +3,19 @@
 
 using namespace std;
 
-void fun(int n){
-    if (n>0)
-    {
-        fun(n-1);
-    }
-    cout<<n<<'\n';
+struct student
+{
+    string name;
+    double gpa;
+    bool enrolled;
+};
 
-    
-    
-}
 
 
 int main(){
 
-    int x = 3;
-    fun(x);
-
+    student student1;
+    student1.name = "Spongebob";
     
     return 0;
 }
