@@ -1,21 +1,7 @@
-#include<iostream>
-#include<iomanip>
-
+#include <iostream>
 using namespace std;
 
-struct student
-{
-    string name;
-    double gpa;
-    bool enrolled;
-};
+int main (){
 
-
-
-int main(){
-
-    student student1;
-    student1.name = "Spongebob";
-    
     return 0;
 }
